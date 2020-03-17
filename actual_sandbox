@@ -1,0 +1,263 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class food{
+    public:
+        string name;
+        string ingredients;
+        string nutritionvalues;
+        double nutritionamounts;
+        food(string word){
+        cout<<"We will look at "<<word<<" today"<< endl;
+        }
+};
+class test{
+    public:
+        string name;
+        string date;
+        int score;
+
+        test(string N,string D,int S){
+            name=N;
+            date=D;
+            score=S;
+        }
+    };
+
+int main(){
+    test abc("John","April 5th", 95);
+    cout<<abc.name;
+    return 0;
+}
+/*int number(int what){
+    cout<<what;
+}
+void cube(int num){
+    cout<<(num*num*num);
+}
+
+void There(double nums,string lets){
+    cout<<"Why is "<<nums<<" what you typed, anyways hows "<<lets<<endl;
+}
+void Here(){
+    cout<<"Here";
+}
+*/
+/*
+string whatisthemonth(int numbermonth){
+    string monthname;
+    switch(numbermonth){
+    case 1:
+        monthname="January";
+        break;
+    case 2:
+        monthname="February";
+        break;
+    case 3:
+        monthname="March";
+        break;
+    case 4:
+        monthname="April";
+        break;
+    case 5:
+        monthname="May";
+        break;
+    case 6:
+        monthname="June";
+        break;
+    case 7:
+        monthname="July";
+        break;
+    case 8:
+        monthname="August";
+        break;
+    case 9:
+        monthname="September";
+        break;
+    case 10:
+        monthname="October";
+        break;
+    case 11:
+        monthname="November";
+        break;
+    case 12:
+        monthname="December";
+        break;
+    default:
+        monthname="something is wrong";
+        break;
+        }
+
+    return monthname;
+}
+*/
+// int main()
+//{
+    //Classes
+
+  /*  food Chips("Takis");
+    Chips.name="Takis";
+    Chips.ingredients="Spices, corn, oil";
+    Chips.nutritionvalues="Calories";
+    Chips.nutritionamounts=140;
+
+    cout<<Chips.ingredients;
+*/
+    /*
+    int x=1;
+    int n1;
+    cout<<"What is your base number: ";
+    cin>>n1;
+    int numa;
+    cout<<"What is the power to raise to: ";
+    cin>>numa;
+    int v=n1;
+    for(n1; x<numa; x++){
+        v=v*n1;
+    }
+    return v;
+    */
+    /*guessing game
+    int a;
+    int g=0;
+    cout<<"Can ya guess the number"<<endl;
+    while(a!=5 && g<2){
+        cin>>a;
+        if(a<5){
+            cout<<"too low ";
+        }
+        else if(a>5){
+            cout<<"too high ";
+        }
+        else if(a==5){
+            cout<<"Congrats";
+            break;
+        }
+        g++;
+        if(g<2){
+            cout<<"try again"<<endl;
+        }
+    }
+    */
+    /*int c=2;
+    while (c<6){
+        cout<<c;
+        c++;
+    }*/
+    /*cout<<whatisthemonth(6);
+    int numb1, numb2;
+    char op;
+    cout<<"What it your first number: ";
+    cin>>numb1;
+    cout<<"What is your second number: ";
+    cin>>numb2;
+    cout<<"What is your operator: ";
+    cin>>op;
+    cout<<numb1<<op<<numb2<<"=";
+    if(op=='+'){
+            cout<<numb1+numb2;
+    }
+    else if (op=='-'){
+            cout<<numb1-numb2;
+    }
+    else if(op=='/'){
+            cout<<numb1/numb2;
+    }
+    else if(op=='*'){
+            cout<<numb1*numb2;
+    }
+    else{
+        "Something is not right here";
+    }
+    */
+    /*int num1;
+    cout<<"What is the first number: ";
+    cin>>num1;
+    int num2;
+    cout<<"What is the second number: ";
+    cin>>num2;*/
+
+    /*cout<<max(num1, num2)<<endl;*/
+    /*if(num1 != num2){
+        cout<<"not equal"<<endl;
+    }
+    else if(num1 == num2){
+        cout<<"equal"<<endl;
+    }
+    if(num1 > num2){
+        cout<<num1<<" is greater than "<<num2<<endl;
+    }
+    else if(num2 > num1){
+        cout<<num2<<" is greater than "<<num1<<endl;
+    }
+    */
+    /*If-then statements
+    bool Cat=true;
+    bool small=false;
+
+    if (Cat && small){
+        cout<<"Condition 1";
+    }
+    else if(Cat && !small){cout<<"condition 2";}
+    else if(!Cat && small){cout<<"condition 3";}
+    else{cout<<"condition 4";}
+    */
+    /*number(3);
+    int x=2;
+    cube(x);
+    Here();
+    string vixy[]={"make", "money", "when", "market", "DOWN"};
+    cout<<vixy[2]<<endl;
+    double nums;
+    cout<<"What's your fravorite number: "<<endl;
+    cin>>nums;
+    string lets;
+    cout<< "Hows ____? ";
+    cin>>lets;
+    There(nums, lets);
+    double num1, num2;
+    cout<<"What is your first Number: ";
+    cin>>num1;
+    cout<<"What is your second Number: ";
+    cin>>num2;
+    cout<<num1+num2<<endl;
+    string halp = "wire";
+    cout<<halp.substr(1,2)<<endl;
+    cout<<16.0/3.0<<endl;
+    cout<<sqrt(8)<<endl;
+    string place;
+    cout<<"where are you: ";
+    getline(cin, place);
+    cout<< "You are in "<< place << endl;
+    string name;
+    cout<< "what is your name: ";
+    getline(cin, name);
+    cout<<"hello " << name << endl;
+    string person, area, thing;
+    cout<<"Give me a person: ";
+    getline(cin, person);
+    cout<<"give me a place: ";
+    getline(cin, area);
+    cout<<"give me a thing: ";
+    getline(cin, thing);
+    cout<<person<<" went to "<<area<<" to buy "<<thing<<endl;
+    int matrix[2][2] = {
+                {1,2},
+                {3,4}
+            };
+
+    for(int e=0; e<2; e++){
+        for(int bb=0;bb<2; bb++){
+            cout<<matrix[e][bb];
+        }
+        cout<<endl;
+    }
+        int l=1;
+        string s="phrase";
+        cout<<&s;
+        cout<<&l;
+        */
+
+//    return 0;
+//    }
